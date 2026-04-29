@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA — Your AI Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <img src="assets/logo-nova-final.svg" alt="Nova logo" class="logo" />
+</header>
+
+<section class="hero">
+<h1>Meet <span class="gradient-text">NOVA</span></h1>
+<p>Your intelligent AI assistant for answers, learning, and action — fast, focused, and reliable.</p>
+</section>
+
+<section class="ask-nova">
+
+  <!-- Tabs -->
+  <div class="nova-tabs">
+    <div class="tab-buttons">
+</div>
+
+  </div>
+
+<div id="chatHistory" class="chat-history centered-fixed"></div>
+
+<!-- FIXED BOTTOM BAR -->
+<div class="bottom-bar">
+
+  <!-- Shared Input -->
+  <div class="chat-input-wrapper">
+    <div class="chat-input">
+      <button id="plusBtn" class="icon-btn" aria-label="Modes">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12h14" />
+        </svg>
+      </button>
+
+      <input
+        id="text-input"
+        type="text"
+        placeholder="Ask Nova anything…"
+        autocomplete="new-password"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+        name="nova-chat-input"
+      />
+
+      <button id="action-btn" class="action-btn">
+        <svg id="mic-icon" viewBox="0 0 24 24">
+          <path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/>
+          <path d="M19 11a7 7 0 0 1-14 0M12 18v3M8 21h8"/>
+        </svg>
+
+        <svg id="send-icon" viewBox="0 0 24 24" style="display:none;">
+          <path d="M5 12h14M13 5l6 7-6 7"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="toolsMenu" class="tools-menu hidden"></div>
+  </div>
+
+  <!-- Footer INSIDE bottom bar -->
+  <p class="footer-text">© 2026 NOVA · AI Assistant Platform</p>
+
+</div>
+
+
+  <!-- Response -->
+  <div id="novaResponse" class="nova-response hidden"></div>
+</section>
+
+
+<script src="script.js"></script>
+<div class="bg-glow"></div>
+
+</body>
+
+
+</html>
